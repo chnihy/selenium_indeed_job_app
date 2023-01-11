@@ -27,7 +27,7 @@ def show_dir(obj):
 	nn()
 
 
-# set path of cd
+# set path of chrome driver
 PATH = './chromedriver'
 
 # init webdriver
@@ -60,28 +60,13 @@ where.send_keys("Remote")
 submit = driver.find_element(By.CLASS_NAME, "yosegi-InlineWhatWhere-primaryButton")
 submit.click()
 
-# getting elements from the page
-#results_list = driver.find_element(By.CLASS_NAME, "jobsearch-ResultsList")
-
-
-
-#job_links = driver.find_elements(By.CLASS_NAME, "jcs-JobTitle")
-#for j in job_links:
-#	print(j.href)
-
+# get the list of result titles
 result_titles = driver.find_elements(By.CLASS_NAME, "jcs-JobTitle")
 for result in result_titles:
 	print(result.text)
 	print(result.get_attribute('href') + '\n') 
-	
-
-#result_content = driver.find_elements(By.CLASS_NAME, "resultContent")
-#for rc in result_content:
-#	print(rc.text)
-	
-
 
 # close
-#driver.close()
+driver.close()
 
 #d = Driver()
