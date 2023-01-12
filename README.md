@@ -7,4 +7,4 @@ You can update your search terms ("what") and location ("where") - and Selenium 
 - get complete list of jobs from last X num of days
 - Filter out jobs that don't feature exact search terms
 - Automatically apply to jobs with Indeed easy apply
-~~Email results to yourself ~~
+
