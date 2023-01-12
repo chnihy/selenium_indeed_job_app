@@ -60,13 +60,23 @@ where.send_keys("Remote")
 submit = driver.find_element(By.CLASS_NAME, "yosegi-InlineWhatWhere-primaryButton")
 submit.click()
 
+# change search criteria to 24 hours
+date_posted = driver.find_element(By.ID, "filter-dateposted")
+date_posted.click()
+selection = driver.find_element(By.CLASS_NAME, "yosegi-FilterPill-dropdownListItemLink")
+selection.click()
+
+time.sleep(5)
+
 # get the list of result titles
 result_titles = driver.find_elements(By.CLASS_NAME, "jcs-JobTitle")
 for result in result_titles:
 	print(result.text)
 	print(result.get_attribute('href') + '\n') 
 
+
+
 # close
-driver.close()
+#driver.close()
 
 #d = Driver()
