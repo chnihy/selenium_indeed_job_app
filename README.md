@@ -1,5 +1,7 @@
 # selenium_indeed_job_app
  A simple selenium app for scraping jobs on Indeed
+ 
+Uses the <a href="https://github.com/SeleniumHQ/selenium">Selenium</a> and <a href="https://github.com/kootenpv/yagmail">Yagmail</a> libraries
 
 You can update your search terms ("what") and location ("where") - and Selenium Driver will return a list of job titles that match your term as well as the links to those jobs.
 
