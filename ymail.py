@@ -16,4 +16,4 @@ class Sender:
 	def send(self, subject, contents):
 		content = contents
 		send_to = environ.get('SEND_TO')
-		self.yag.send(send_to, subject, content)
+		self.yag.send(send_to, subject, contents=[content, './jobs.txt'])
