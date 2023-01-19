@@ -18,3 +18,9 @@ Or you could just put the authorization somewhere in the main app file
 ### More automation coming soon: 
 - Automatically apply to jobs with Indeed easy apply
 
+
+# How to use:
+CD to directory, install requirements, then:
+'''
+python3 app.py
+'''
