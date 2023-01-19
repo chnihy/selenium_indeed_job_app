@@ -16,7 +16,5 @@ SEND_TO = "send@gmail.com"
 Or you could just put the authorization somewhere in the main app file
 
 ### More automation coming soon: 
-- get complete list of jobs from last X num of days
-- Filter out jobs that don't feature exact search terms
 - Automatically apply to jobs with Indeed easy apply
 
