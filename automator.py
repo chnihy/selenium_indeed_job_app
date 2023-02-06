@@ -1,17 +1,4 @@
-criteria = {
-	"What":"",
-	"Where":"",
-	"Date Posted":{
-			"1": "1", 
-			"2": "3", 
-			"3": "7", 
-			"4": "14"},
-	"Experience Level":{
-			"0": "",
-			"1":"ENTRY_LEVEL"
-	}
-}
-
+import search_criteria
 
 states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 		"Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
@@ -23,10 +10,16 @@ states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
 		
 adjectives = ["","entry level", "junior"]
 
-jobs = ["python"]
-#jobs = ["python", "developer",
-#		"etl", "data engineer",
-#		"qa", "quality assurance analyst", "qa engineer", "manual qa",
-#		"software tester"]
+jobs = ["python", "developer",
+		"etl", "data engineer",
+		"qa", "quality assurance analyst", "qa engineer", "manual qa",
+		"software tester"]
 		
-
+def run():
+	sc = search_criteria
+	for state in states:
+		for job in jobs:
+			sc["What"] = job
+			sc["Where"] = state
+			sc["Date Posted"] = 1
+			

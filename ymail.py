@@ -13,7 +13,7 @@ class Sender:
 		username = environ.get('USERNAME')
 		self.yag = yagmail.SMTP(username, password)
 	
-	def send(self, subject, contents):
+	def send(self, subject, contents, filepath):
 		content = contents
 		send_to = environ.get('SEND_TO')
-		self.yag.send(send_to, subject, contents=[content, './jobs.txt'])
+		self.yag.send(send_to, subject, contents=[content, filepath])
