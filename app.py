@@ -7,7 +7,7 @@ from search_criteria import jobs, states
 # instantiate Scraper and Sender objects
 all_states = input("All states? y or n ")
 if all_states.lower() != "y":
-	scraper = Scaper()
+	scraper = Scraper()
 sender = Sender()
 
 # build search criterias
