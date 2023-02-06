@@ -2,7 +2,6 @@ import yagmail
 from os import environ, path
 from dotenv import load_dotenv
 
-
 # ENVIRONMENT CONFIG
 basedir = path.abspath(path.dirname(__file__))
 load_dotenv(path.join(basedir, '.env'))

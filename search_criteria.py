@@ -12,7 +12,6 @@ criteria = {
 	}
 }
 
-
 states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", "Connecticut", 
 		"Delaware", "Florida", "Georgia", "Hawaii", "Idaho", "Illinois", "Indiana", "Iowa", 
 		"Kansas", "Kentucky", "Louisiana", "Maine", "Maryland", "Massachusetts", "Michigan", 
@@ -24,9 +23,5 @@ states = ["Alabama", "Alaska", "Arizona", "Arkansas", "California", "Colorado", 
 adjectives = ["","entry level", "junior"]
 
 jobs = ["python"]
-#jobs = ["python", "developer",
-#		"etl", "data engineer",
-#		"qa", "quality assurance analyst", "qa engineer", "manual qa",
-#		"software tester"]
-		
+
 
